@@ -1,19 +1,19 @@
 # Prerequisites
 
-$ export AWS_ACCESS_KEY_ID="anaccesskey"
-$ export AWS_SECRET_ACCESS_KEY="asecretkey"
-$ terraform init
+> $ export AWS_ACCESS_KEY_ID="anaccesskey"
+> $ export AWS_SECRET_ACCESS_KEY="asecretkey"
+> $ terraform init
 
 OR
 
-CHANGE THIS YOUR credentials path after doing "aws configure"
+Run "aws configure" where credentials will be stored here:
 "/Users/<username>/.aws/credentials" or $HOME/.aws/credentials
 
 
 ## Tips
 
-+ means created
-- means deleted
+\+ means created
+\- means deleted
 ~ means modified
 -/+ means replace
 
@@ -29,4 +29,18 @@ Production use private subnets not Default VPC which is public subnets
 
 
 By default all AWS resources don't allow incoming or outgoing traffic, so need to create security group
+
+ARN = Amazon Resource Name
+
+DRY (Don't Repeat Yourself)
+
+
+
+> Terraform init
+> Terraform refresh - TF View -> Real world: What is actually running?
+> Terraform plan - Real world -> desired config
+> Terraform apply - plan -> real world
+> Terraform destroy - plan -> real world
+
+Can also append `-auto-approve` to avoid typing in yes. Not the safest route though.
 

@@ -1,5 +1,6 @@
 Up until LoadBalancer run:
   + curl http://<ipaddress>:8080
+  
 At LoadBalancer run:
   + curl http://<alb_dns_name>
 

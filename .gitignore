@@ -1,4 +1,4 @@
-# Downloaded code for provider
+# Downloaded code for provider, and configuration for Terraform backend
 .terraform
 
 # State files
