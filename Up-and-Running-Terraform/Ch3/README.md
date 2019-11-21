@@ -10,9 +10,13 @@ Also, can't use variables in backend block. Solution:
   ## Isolation Via WORKSPACES
 
 `terraform workspace show` shows which workspace in
+
 `terraform workspace new <name>` creates new workspace & switch to
+
 `terraform workspace list` show all workspaces
+
 `terraform workspace select <name>` select an existing workspace
+
 `terraform workspace delete <name>` delete an existing workspace if statefile is destroyed first
 
 workspaces get stored in s3 under folder `env:`

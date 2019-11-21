@@ -1,7 +1,9 @@
 # Prerequisites
 
 > $ export AWS_ACCESS_KEY_ID="anaccesskey"
+
 > $ export AWS_SECRET_ACCESS_KEY="asecretkey"
+
 > $ terraform init
 
 OR
@@ -37,9 +39,13 @@ DRY (Don't Repeat Yourself)
 
 
 > Terraform init
+
 > Terraform refresh - TF View -> Real world: What is actually running?
+
 > Terraform plan - Real world -> desired config
+
 > Terraform apply - plan -> real world
+
 > Terraform destroy - plan -> real world
 
 Can also append `-auto-approve` to avoid typing in yes. Not the safest route though.
