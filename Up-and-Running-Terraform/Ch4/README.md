@@ -20,7 +20,7 @@ New covered concepts (to me):
 Basically do the following:
   1. Git init in Modules and push.
   2. `git tag -a "v0.0.1" -m "First release of webserver-cluster module"; git push --follow-tags`
-  3. In stage or prod when using module change source to be `source = "github.com/<OWNER>/<REPO>.git//<PATH>?ref=v0.0.1"` if private repo otherwise if public this is fine `source = "github.com/<OWNER>/<REPO>//<PATH>?ref=v0.0.1"`
+  3. In stage or prod when using module change source to be `source = "git@github.com:<OWNER>/<REPO>.git//<PATH>?ref=v0.0.1"` if private repo otherwise if public this is fine `source = "github.com/<OWNER>/<REPO>//<PATH>?ref=v0.0.1"`
   4. Rerun `terraform init`
 
 v0.0.0 = MAJOR.MINOR.PATCH
