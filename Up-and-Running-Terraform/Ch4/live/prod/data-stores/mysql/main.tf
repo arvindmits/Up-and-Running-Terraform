@@ -22,6 +22,6 @@ data "aws_secretsmanager_secret_version" "db_password" {
 
 terraform {
     backend "s3" {
-        key = "stage/data-stores/mysql/terraform.tfstate"
+        key = "prod/data-stores/mysql/terraform.tfstate"
     }
 }

@@ -5,9 +5,9 @@ provider "aws" {
 module "webserver_cluster" {
     source = "../../../modules/services/webserver-cluster"
 
-    cluster_name = "webservers-prod"
-    db_remote_state_bucket = "RyanHarlich-Terraform-Up-and-Running"
-    db_remote_state_key = "prod/data-stores/mysql/terraform.tfstate"
+    cluster_name = var.cluster_name
+    db_remote_state_bucket = var.db_remote_state_bucket
+    db_remote_state_key = var.db_remote_state_key
 
     instance_type = "t2.mirco" # Normally for production would be better
     min_size = 2
@@ -32,4 +32,10 @@ resource "aws_autoscaling_schedule" "scale_in_at_night" {
     recurrence = "0 17 * * *"
 
     autoscaling_group_name = module.webserver_cluster.asg_name
+}
+
+terraform {
+    backend "s3" {
+        key = "prod/services/webserver-cluster/terraform.tfstate"
+    }
 }
