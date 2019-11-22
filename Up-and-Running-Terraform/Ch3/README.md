@@ -47,4 +47,5 @@ This section was not deployed because it is very badly structured. Waiting for m
 Quick things covered.
   + `data.terraform_remote_state.<NAME>.outputs.<ATTRIBUTE>`: which is all the database's output variables are stored in the state file and you can read them from the terraform_remote_state data source using an attribute reference of this form.
   + Avoiding Bash scrips inline with `data "template_file" "<name>" {template = file("user-data.sh") ... vars = {server_port = var.server_port}}` check out user-data.sh in stage > servers > webserver-cluser > user-data.sh
+  + RDS and password management with password = `data.aws_secretsmanager_secret_version.db_password.secret_string`
 

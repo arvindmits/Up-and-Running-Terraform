@@ -1,7 +1,10 @@
-# Downloaded code for provider, and configuration for Terraform backend
+# Downloaded code for provider and modules, and configuration for Terraform backend
 .terraform
 
 # State files
 *.tfstate
 *.tfstate.backup
 *tfstate*
+
+# Inner git repositories 
+.git
