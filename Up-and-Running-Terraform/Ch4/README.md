@@ -66,4 +66,6 @@ Run in browser: http://<output from apply from alb_dns_name>
 
 
 # DONE!
+
+Prod should be the same; although I never tested this.
   
