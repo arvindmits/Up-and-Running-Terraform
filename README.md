@@ -50,3 +50,14 @@ DRY (Don't Repeat Yourself)
 
 Can also append `-auto-approve` to avoid typing in yes. Not the safest route though.
 
+
+# Chapters
+
++ Ch2 - Terraform Syntax
++ Ch3 - Terraform State
++ Ch4 - Terraform Module
++ Ch5 - Tips & Tricks
++ Ch6 - Production Grade Infrastructure
++ Ch7 - Terraform Testing in Go
++ Ch8 - Terraform Team
+
