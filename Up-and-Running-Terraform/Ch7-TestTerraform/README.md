@@ -114,3 +114,10 @@ pg. 266: skimmed, enhanced integration test
 
 pg. 273: skimmed
 
+
+# Video Version
+
+Video: https://www.infoq.com/presentations/automated-testing-terraform-docker-packer/
+
+GitHub: https://github.com/gruntwork-io/infrastructure-as-code-testing-talk/tree/master/test
+
